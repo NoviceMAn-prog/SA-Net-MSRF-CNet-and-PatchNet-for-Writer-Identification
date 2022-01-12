@@ -19,6 +19,15 @@ and page-level writer identification methods on the CVL, Firemaker, CERUG-EN dat
 ## 2.4.) PatchNet Architecture
 ![](Patch_D.png)
 
+## 3.) Training and Testing
+## 3.1)Data Preparation
+The code for downloading and using it for training and testing is embedded in `python train.py` for CERUG-EN and Firemaker Dataset,the training and testing split for IAM dataset is provided in IAM-train.txt and IAM-test.txt
+
+## 3.2)Training
+The architecture for MSRF-CNet, SA-Net is defined in msrfc.py and PatchNet architecture is in patchnet.py, for training change the dataset as required in the train.py, the testing code is also in train.py, enjoy!
+Run the script as:
+`python train.py`
+
 ## 4.) Citation
 Please cite our paper if you find the work useful:
 
